@@ -1,6 +1,6 @@
 #!/bin/sh
 ################################################
-# yum Client Sample
+# Yum Proxy Repository Client Script Sample
 # (for RHEL/CentOS 7.x)
 #
 # [Vagrantfile]
