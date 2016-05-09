@@ -32,7 +32,7 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell" do |s|
     s.path = "mkrepo.sh"
     s.args = PACKAGES
-    s.env = {:HTTP_PROXY => ENV['HTTP_PROXY'], :HTTPS_PROXY => ENV['HTTP_PROXY']}
+    s.env = {:http_proxy => ENV['HTTP_PROXY'], :https_proxy => ENV['HTTP_PROXY']}
   end
 
 end
