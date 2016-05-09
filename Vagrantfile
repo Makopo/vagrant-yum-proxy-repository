@@ -25,6 +25,8 @@ Vagrant.configure(2) do |config|
   config.vm.provider :virtualbox do |v, override|
     override.vm.box = BASE_BOX_VIRTUALBOX
     override.vm.box_check_update = false
+    # For Windows having no rsync, uncomment this line
+    # config.vm.synced_folder ".", "/home/vagrant/sync", disabled: true
   end
 
   config.vm.synced_folder ".", "/vagrant", disabled: true
